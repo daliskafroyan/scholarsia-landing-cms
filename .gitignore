@@ -1,13 +1,39 @@
-build
-dist / media
+# dependencies
 node_modules
+.pnp
+.pnp.js
+pnpm-lock.yaml
+
+# testing
+coverage
+
+# next.js
+.next/
+out/
+build
+dist
+
+# misc
 .DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
 .env
-.next
+
+# vercel
 .vercel
 
-# Payload default media upload directory
-public/media/
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
-public/robots.txt
-public/sitemap*.xml
+# IDE
+.vscode/
+.idea/
