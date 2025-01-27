@@ -4,13 +4,14 @@ import { Container, Group, SegmentedControl, Button } from '@mantine/core';
 // import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './HeaderMenu.module.css';
+import Image from 'next/image';
 
 const links = [
-  { link: '/features', label: 'Features' },
-  { link: '/docs', label: 'Documentation' },
-  { link: '/about', label: 'About' },
-  { link: '/pricing', label: 'Pricing' },
-  { link: '/faq', label: 'FAQ' },
+  { link: '/', label: '🏠' },
+  { link: '/features', label: 'Pusat Pengembangan' },
+  { link: '/docs', label: 'Beasiswa' },
+  { link: '/about', label: 'Mitra' },
+  { link: '/pricing', label: 'Tentang Kami' },
 ];
 
 export function HeaderMenu() {
@@ -23,10 +24,26 @@ export function HeaderMenu() {
 
   return (
     <header className={classes.header}>
-      <Container size="md">
+      <Container size="xl">
         <div className={classes.inner}>
-          <MantineLogo size={28} />
-          <Group justify="center" style={{ flex: 1 }}>
+          <div style={{ flex: '0 0 auto' }}>
+            <Image
+              src="/scholarsia-logo.svg"
+              alt="Scholarsia Logo"
+              width={116}
+              height={30}
+              priority
+            />
+          </div>
+          <Group
+            justify="center"
+            style={{
+              position: 'absolute',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              zIndex: 1
+            }}
+          >
             <SegmentedControl
               data={segments}
               onChange={(value) => {
@@ -42,10 +59,10 @@ export function HeaderMenu() {
               }}
             />
           </Group>
-          <Group gap="xs" visibleFrom="sm">
+          {/* <Group gap="xs" visibleFrom="sm">
             <Button variant="subtle" size="sm">Log in</Button>
             <Button size="sm">Sign up</Button>
-          </Group>
+          </Group> */}
           {/* <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" /> */}
         </div>
       </Container>

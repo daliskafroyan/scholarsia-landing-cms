@@ -1,0 +1,73 @@
+.benefitCard {
+  padding: 32px;
+  background: #1a2735;
+  border-radius: 12px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-4px);
+}
+
+.servicesSection {
+  background-image: url('/bg-pattern-1.png');
+  background-size: cover;
+  background-position: center;
+  margin: 40px 40px;
+  padding: 60px 24px;
+  color: white;
+  border-radius: 24px;
+  max-width: 1400px;
+}
+
+.sectionHeader {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.serviceCard {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepNumber {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  background: linear-gradient(180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
