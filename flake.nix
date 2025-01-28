@@ -1,5 +1,5 @@
 {
-  description = "Your application description";
+  description = "Nix Flake for a Node.js development environment";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";

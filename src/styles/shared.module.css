@@ -1,0 +1,32 @@
+.sectionWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  margin-top: -300px;
+  z-index: 2;
+}
+
+.sectionContainer {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.creamBackground {
+  background-color: rgba(251, 200, 0, 0.3);  /* FBC800 with 0.5 opacity */
+  border-radius: 48px;
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 40px;
+}
+
+.basicWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
