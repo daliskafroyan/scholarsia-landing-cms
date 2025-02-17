@@ -7,10 +7,10 @@ import Image from 'next/image';
 
 const links = [
   { link: '/', label: '🏠' },
-  { link: '/features', label: 'Pusat Pengembangan' },
-  { link: '/docs', label: 'Beasiswa' },
-  { link: '/about', label: 'Mitra' },
-  { link: '/pricing', label: 'Tentang Kami' },
+  { link: '/features', label: 'Development Center' },
+  { link: '/docs', label: 'Scholarship Service' },
+  { link: '/about', label: 'Partners' },
+  { link: '/pricing', label: 'About Us' },
 ];
 
 export function Navigation() {

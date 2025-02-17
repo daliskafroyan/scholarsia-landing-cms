@@ -1,5 +1,7 @@
+"use client"
+
 import React from "react";
-import { Text, Container, SimpleGrid, Box, Stack } from "@mantine/core";
+import { Text, Container, SimpleGrid, Box, Stack, Grid, Image } from "@mantine/core";
 import styles from "./benefit.section.module.css";
 
 export function BenefitSection() {
@@ -25,16 +27,102 @@ export function BenefitSection() {
     <Box className={styles.servicesSection}>
       <Container size="lg">
         <div className={styles.sectionHeader}>
-          <Text tt="capitalize" fw="bold" fz="lg">Dapat apa di Scholarsia?</Text>
+          {/* <Text tt="capitalize" fw="bold" fz="lg">Dapat apa di Scholarsia?</Text> */}
           <Text component="h2" className={styles.sectionTitle}>
-            Manfaat yang kamu dapatkan
+            Who We Are?
           </Text>
           <Text className={styles.sectionDescription}>
-            Bergabung dengan Scholarsia membuka peluang untuk mengembangkan diri dan meraih pendidikan berkualitas internasional.
+            We are a leading education platform committed to connecting Indonesian students with the best international education opportunities. Through global scholarship information, student exchange programs, and international educational partnerships, we help Indonesian students achieve their dreams and become a generation ready to compete in the global arena.
           </Text>
         </div>
 
-        <SimpleGrid cols={3} spacing={40}>
+        <Grid pos="relative" h={360}>
+          <Grid.Col span={4}>
+            <div style={{
+              position: 'absolute',
+              left: '-10%',
+              top: '10px',
+              width: '30%',
+              transform: 'rotate(-3deg)',
+              zIndex: 2
+            }}>
+              <Image
+                radius="md"
+                src="about-us-1.jpg"
+                alt="Image 1"
+                h={300}
+                w="100%"
+                fit="cover"
+                style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.2)' }}
+              />
+            </div>
+          </Grid.Col>
+
+          <Grid.Col span={4}>
+            <div style={{
+              position: 'absolute',
+              left: '21%',
+              top: '60px',
+              width: '30%',
+              transform: 'rotate(3deg)',
+              zIndex: 1
+            }}>
+              <Image
+                radius="md"
+                src="about-us-2.jpg"
+                alt="Image 2"
+                h={300}
+                w="100%"
+                fit="cover"
+                style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.2)' }}
+              />
+            </div>
+          </Grid.Col>
+
+          <Grid.Col span={4}>
+            <div style={{
+              position: 'absolute',
+              left: '50%',
+              top: '0px',
+              width: '30%',
+              transform: 'rotate(-2deg)',
+              zIndex: 3
+            }}>
+              <Image
+                radius="md"
+                src="about-us-3.jpg"
+                alt="Image 3"
+                h={300}
+                w="100%"
+                fit="cover"
+                style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.2)' }}
+              />
+            </div>
+          </Grid.Col>
+
+          <Grid.Col span={4}>
+            <div style={{
+              position: 'absolute',
+              left: '80%',
+              top: '40px',
+              width: '30%',
+              transform: 'rotate(4deg)',
+              zIndex: 2
+            }}>
+              <Image
+                radius="md"
+                src="about-us-4.jpg"
+                alt="Image 4"
+                h={300}
+                w="100%"
+                fit="cover"
+                style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.2)' }}
+              />
+            </div>
+          </Grid.Col>
+        </Grid>
+
+        {/* <SimpleGrid cols={3} spacing={40}>
           {benefits.map((benefit) => (
             <div key={benefit.step} className={styles.serviceCard}>
               <div className={styles.stepNumber}>
@@ -48,7 +136,7 @@ export function BenefitSection() {
               </Text>
             </div>
           ))}
-        </SimpleGrid>
+        </SimpleGrid> */}
       </Container>
     </Box>
   );

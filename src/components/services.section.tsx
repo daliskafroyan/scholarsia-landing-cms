@@ -27,29 +27,29 @@ type ServiceData = {
 const servicesData: ServiceData[] = [
   {
     icon: IconSchool,
-    title: 'College Camp',
-    description: 'Persiapan intensif untuk masuk perguruan tinggi impian, termasuk pemilihan jurusan dan kampus yang tepat',
+    title: 'Development Center',
+    description: 'Intensive preparation for entering your dream university, including guidance on choosing the right major and campus',
   },
   {
     icon: IconTent,
-    title: 'Seasonal Camp',
-    description: 'Program liburan yang menggabungkan pembelajaran dan kegiatan menyenangkan untuk pengembangan diri',
+    title: 'Scholarship Service',
+    description: 'We provide scholarship services to help you get scholarships from various sources',
   },
-  {
-    icon: IconUserCheck,
-    title: 'Bootcamp',
-    description: 'Program intensif jangka pendek untuk mempersiapkan kemampuan spesifik dalam bidang akademik atau karir',
-  },
-  {
-    icon: IconUsers,
-    title: 'Komunitas Pelajar',
-    description: 'Bergabung dengan jaringan pelajar Indonesia yang belajar di seluruh dunia untuk berbagi pengalaman',
-  },
-  {
-    icon: IconHome,
-    title: 'Akomodasi',
-    description: 'Bantuan mencari dan mengatur tempat tinggal yang aman dan nyaman selama masa studi di luar negeri',
-  },
+  // {
+  //   icon: IconUserCheck,
+  //   title: 'Bootcamp',
+  //   description: 'Program intensif jangka pendek untuk mempersiapkan kemampuan spesifik dalam bidang akademik atau karir',
+  // },
+  // {
+  //   icon: IconUsers,
+  //   title: 'Komunitas Pelajar',
+  //   description: 'Bergabung dengan jaringan pelajar Indonesia yang belajar di seluruh dunia untuk berbagi pengalaman',
+  // },
+  // {
+  //   icon: IconHome,
+  //   title: 'Akomodasi',
+  //   description: 'Bantuan mencari dan mengatur tempat tinggal yang aman dan nyaman selama masa studi di luar negeri',
+  // },
 ];
 
 // Reusable ServiceCard component
@@ -73,8 +73,8 @@ export function ServicesSection() {
     // <AuroraBackground>
       <div className={styles.servicesSection}>
         <div className={styles.sectionHeader}>
-          <Text tt="capitalize" fw="bold" fz="lg">Program Kami</Text>
-          <Text component="h2" className={styles.sectionTitle}>Apa yang kami sediakan?</Text>
+          {/* <Text tt="capitalize" fw="bold" fz="lg">Program Kami</Text> */}
+          <Text component="h2" className={styles.sectionTitle}>What We Offer?</Text>
           <Text className={styles.sectionDescription}>
             Eksplor program pendidikan dan pengembangan diri untuk membantu kamu mencapai potensi maksimal dalam perjalanan akademik dan karir internasional.
           </Text>

@@ -24,7 +24,7 @@ export default async function Home() {
 
         <ServicesSection />
       </div>
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Box py={{ base: 40, md: 80 }}>
         <Container size="lg">
           <EmailBanner />

@@ -74,7 +74,7 @@ export function HeroSection() {
               zIndex: 2,
             }}>
               <div>
-                <Badge
+                {/* <Badge
                   variant="light"
                   color="#8A3FFC"
                   size="lg"
@@ -96,7 +96,7 @@ export function HeroSection() {
                   }
                 >
                   📢 Announcement: Open for Bootcamp
-                </Badge>
+                </Badge> */}
                 <Title
                   order={2}
                   fz={{ base: 32, md: 48 }}
@@ -104,15 +104,14 @@ export function HeroSection() {
                   lh={1.2}
                   mb="md"
                 >
-                  Maksimalkan Potensimu dengan Akses Global ke Pendidikan Terbaik
+                  Unlock Your Potential with Global Access to World-Class Education
                 </Title>
                 <Text size="lg" c="dimmed" maw={600}>
-                  Platform Terbaik untuk Beasiswa, Pertukaran Pelajar, dan Program Pendidikan Internasional
+                We offer comprehensive solutions for Indonesian students to access the best education worldwide. Ready to start your educational journey?
                 </Text>
-                {/* <Group mt="xl">
-                  <Button color="red">CARI BEASISWA</Button>
-                  <Button variant="outline">LIHAT PROGRAM LAIN</Button>
-                </Group> */}
+                <Group mt="xl">
+                  <Button color='#E63946'>Explore Our Program!</Button>
+                </Group>
               </div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <img
